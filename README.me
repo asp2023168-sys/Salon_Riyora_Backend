@@ -1,30 +1,33 @@
-Salon Riyora – Beauty Salon Booking Web Application
+Salon Riyora Backend – Beauty Salon Booking Web Application
 
 Project Overview
-Salon Riyora is an interactive beauty salon booking web application that allows users to explore services, create accounts, log in, and book appointments online. The website features a responsive design and user-friendly interface.
+The backend of **Salon Riyora** powers the booking system, user authentication, and service management for the web application. It handles database operations and provides APIs for the frontend to interact with user and appointment data.
 
 Features
-- Display salon services using card layouts
-- User registration and login system
-- Online appointment booking form
-- JavaScript form validation
-- Image slider on the home page
-- Booking confirmation popup
-- Smooth navigation and UI effects
-
-Website Pages
-- **Home Page** – Introduction, image slider, featured services  
-- **Services Page** – List of salon services with images  
-- **Booking Page** – Appointment booking form  
-- **Contact Page** – Contact details and contact form  
-- **Login Page** – User login  
-- **Register Page** – User registration  
+- Manage salon services in the database  
+- Handle user registration and login  
+- Process appointment bookings  
+- Validate and store user and booking data  
+- Provide APIs for frontend integration  
 
 Technologies Used
-- HTML  
-- CSS  
-- Bootstrap  
-- JavaScript  
+- PHP  
+- MySQL  
+- XAMPP/WAMP  
 
-Purpose
-This project demonstrates the development of a responsive and interactive salon booking website with basic user authentication using front-end web technologies.
+Setup Instructions
+
+1. Import the Database
+1. Open **phpMyAdmin** (`http://localhost/phpmyadmin`).  
+2. Create a new database (e.g., `salon_riyora`).  
+3. Select the database → click **Import** → choose the `database.sql` file → click **Go**.
+
+2. Configure Database Connection
+1. Open the `config.php` file in the backend project folder.  
+2. Update database credentials if needed:
+
+php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "salon_riyora";
